@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub PRs</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Pull Requests</h1>
+        
+        <div class="input-group">
+            <label for="username">GitHub Username</label>
+            <input type="text" id="username" placeholder="e.g., octocat">
+        </div>
+
+        <div class="input-group">
+            <label for="token">Personal Access Token</label>
+            <input type="password" id="token" placeholder="Requires 'repo' scope">
+            <button id="saveTokenBtn">Save Token</button>
+        </div>
+
+        <button id="fetchBtn" class="primary-btn">Fetch Open PRs</button>
+
+        <div id="status"></div>
+        <div id="results"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
